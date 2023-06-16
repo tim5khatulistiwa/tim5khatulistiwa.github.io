@@ -1,1 +1,0 @@
-# tim5khatulistiwa.github.io
