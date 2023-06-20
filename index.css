@@ -1,0 +1,92 @@
+.threenavbar {
+    margin-bottom: 70px;
+    width: 35%;
+}
+
+.header {
+    background-image: url(bg-homepage.jpg);
+    background-size: cover;
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+
+.tasktamer {
+    font-family: 'Geologica', sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-size: 50px;
+}
+
+footer { 
+    background-color: #EEEEEE;
+    padding-top: 20px;
+    padding: 10px 10px;
+}
+
+.social a {
+    color: black;
+}
+
+.list-black {
+    color: black;
+}
+
+.learn-more {
+    margin-bottom: 100px;
+}
+
+.welcome {
+    margin-top: 100px;
+    width: 70%;
+}
+
+@font-face /*perintah untuk memanggil font eksternal*/
+  {
+    font-family: 'airbnb-font1'; /*memberikan nama bebas untuk font*/
+    src: url('AirbnbCereal1.otf');/*memanggil file font eksternalnya di folder nexa*/
+}
+
+@font-face /*perintah untuk memanggil font eksternal*/
+    {
+      font-family: 'airbnb-font2'; /*memberikan nama bebas untuk font*/
+      src: url('AirbnbCereal2.otf');/*memanggil file font eksternalnya di folder nexa*/
+}
+
+.stay-ogz {
+    font-family: 'airbnb-font1';
+    font-weight:bold;
+    color: black;
+}
+
+.description {
+    font-family: 'airbnb-font2';
+    font-weight: bold;
+}
+
+.Procastination {
+    text-align: center;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.proc-is-over {
+    font-size: 30px;
+    font-family: 'airbnb-font1';
+    font-weight:bold;
+    color: black;
+}
+
+.with-us {
+    font-family: 'airbnb-font2';
+    font-size: 15px;
+}
+
+.threefooter {
+    font-size: small;
+}
+
+.copyright {
+    font-size: small;
+}
