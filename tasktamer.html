@@ -1,0 +1,257 @@
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>To Do List</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geologica&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="tasktamer.css">
+  
+</head>
+
+<body>
+  <div class="header">
+    <div class="tasktamer" align="center">
+      <p>TaskTamer</p>
+    </div>
+    <br>
+    <div class="container d-flex justify-content-center">
+      <nav
+        class="mb-0 threenavbar navbar navbar-expand-lg bg-body-tertiary navbar bg-dark border-bottom border-bottom-dark"
+        data-bs-theme="dark">
+        <div class="container-fluid">
+          <div class="collapse navbar-collapse nav justify-content-center" id="navbarNav">
+            <ul class="navbar-nav fs-7">
+              <li class="nav-item">
+                <a class="nav-link" href="index.html">Homepage</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="tasktamer.html">To Do List</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Our Team.html">Our Team</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <div class="container body-todo" align="center">
+    <br>
+    <p>
+    <div class="d-flex justify-content-center">
+      <img height="75px" src="to-do-list 1.png">
+      <span class="your-task fs-2">Your Task</span>
+    </div>
+    <br>
+    <!-- disini buat add bar -->
+    <div class="row mt-3" name="add bar" style="margin-bottom: 130px;">
+      <div class="col-5">
+        <input class="form-control" type="text" id="text-todo" placeholder="add here....">
+      </div>
+      <div class="col-3">
+        <input class="form-control" type="date" name="" id="date-todo">
+      </div>
+      <div class="col-3">
+        <input class="form-control" type="time" name="" id="time-todo">
+      </div>
+      <div class="col-1" >
+        <button class="fs-1 button-plus" id="send" href=" ">
+          <i class="bi bi-plus-circle" ></i>
+        </button>
+      </div>
+    </div>
+    <!-- sampe sini -->
+
+    <!-- bawah ini filter -->
+    <div class="row d-flex justify-content-end" name="filter">
+      <div class="col-3">
+        <div class="input-group mb-3">
+          <select class="form-select" aria-describedby="basic-addon2">
+            <option value="1">All</option>
+            <option value="2">Completed</option>
+            <option value="3">Active</option>
+            <option value="4">Has due date</option>
+          </select>
+          <span class="input-group-text fs-4" id="basic-addon2"><i class="bi bi-filter"></i></span>
+        </div>
+      </div>
+
+      <div class="col-3">
+        <div class="input-group mb-3">
+          <select class="form-select" aria-describedby="basic-addon3">
+            <option value="1">Added date</option>
+            <option value="2">Due date</option>
+          </select>
+          <span class="input-group-text fs-4" id="basic-addon3"><i class="bi bi-calendar-day"></i></span>
+        </div>
+      </div>
+    </div>
+    <!-- sampe sini -->
+
+    <!-- bawah ini buat checkbox nya -->
+    <div class="container border p-4">
+      <ul class="list-group mb-0" id="list-todo">
+        <!-- <li
+          id="todo1"
+          class="list-group-item d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
+          <div class="d-flex justify-content-start">
+            <input class="form-check-input" type="checkbox" id="completed" value="" aria-label="..." />
+            <div>
+              <div class="d-flex justify-content-start">
+                <p id="todo1-text">
+                  Buy groceries for next week
+                </p>
+              </div>
+              <div class="d-flex justify-content-start">
+                <span class="tanggal mx-2">
+                  12 June
+                </span>
+                <span class="jam">
+                  10:00 am
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-end">
+            <button class="btn btn-dark mx-2"><i class="bi bi-pencil-square"></i></button>
+            <button class="btn btn-dark" onclick="hapus(todo1)"><i class="bi bi-trash"></i></button>
+          </div>
+        </li>
+
+        <li
+          id="todo2"
+          class="list-group-item d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
+          <div class="d-flex justify-content-start">
+            <input class="form-check-input" type="checkbox" value="" aria-label="..." />
+            <div>
+              <div class="d-flex justify-content-start">
+                <p>
+                  Read a book
+                </p>
+              </div>
+              <div class="d-flex justify-content-start">
+                <span class="tanggal mx-2">
+                  12 June
+                </span>
+                <span class="jam">
+                  5:00 pm
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-end">
+            <button class="btn btn-dark mx-2"><i class="bi bi-pencil-square"></i></button>
+            <button class="btn btn-dark" onclick="hapus(todo2)"><i class="bi bi-trash"></i></button>
+          </div>
+        </li>
+
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
+          <div class="d-flex justify-content-start">
+            <input class="form-check-input" type="checkbox" value="" aria-label="..." />
+            <div>
+              <div class="d-flex justify-content-start">
+                <p>
+                  Wash clothes
+                </p>
+              </div>
+              <div class="d-flex justify-content-start">
+                <span class="tanggal mx-2">
+                  13 June
+                </span>
+                <span class="jam">
+                  7:00 am
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-end">
+            <button class="btn btn-dark mx-2"><i class="bi bi-pencil-square"></i></button>
+            <button class="btn btn-dark"><i class="bi bi-trash"></i></button>
+          </div>
+        </li>
+        
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
+          <div class="d-flex justify-content-start">
+            <input class="form-check-input" type="checkbox" value="" aria-label="..." />
+            <div>
+              <div class="d-flex justify-content-start">
+                <p>
+                  Meet my friends from middle school 
+                </p>
+              </div>
+              <div class="d-flex justify-content-start">
+                <span class="tanggal mx-2">
+                  15 June
+                </span>
+                <span class="jam">
+                  4:00 pm
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-end">
+            <button class="btn btn-dark mx-2"><i class="bi bi-pencil-square"></i></button>
+            <button class="btn btn-dark"><i class="bi bi-trash"></i></button>
+          </div>
+        </li>
+
+        <li
+          class="list-group-item d-flex justify-content-between align-items-center border-start-0 border-top-0 border-end-0 border-bottom rounded-0 mb-2">
+          <div class="d-flex justify-content-start">
+            <input class="form-check-input" type="checkbox" value="" aria-label="..." />
+            <div>
+              <div class="d-flex justify-content-start">
+                <p>
+                  Cleaning my galery photos  
+                </p>
+              </div>
+              <div class="d-flex justify-content-start">
+                <span class="tanggal mx-2">
+                  20 June
+                </span>
+              </div>
+            </div>
+          </div>
+          <div class="d-flex align-items-center justify-content-end">
+            <button class="btn btn-dark mx-2"><i class="bi bi-pencil-square"></i></button>
+            <button class="btn btn-dark"><i class="bi bi-trash"></i></button>
+          </div>
+        </li> -->
+      </ul>
+    </div>
+    <!-- sampe sini -->
+  </div>
+
+ 
+  <script type="text/javascript" src="js1.js"></script>
+</body>
+<footer align="center">
+  <div class="social">
+    <a href="#"><i class="icon ion-social-instagram"></i></a>
+    <a href="#"><i class="icon ion-social-twitter"></i></a>
+    <a href="#"><i class="icon ion-social-facebook"></i></a>
+  </div>
+
+  <div>
+    <ul class="list-inline threefooter">
+      <li class="list-inline-item"><a class="list-black" href="index.html">Home</a></li>
+      <li class="list-inline-item"><a class="list-black" href="tasktamer.html">To-Do-List</a></li>
+      <li class="list-inline-item"><a class="list-black" href="Our Team.html">Our Team</a></li>
+    </ul>
+  </div>
+  <p class="copyright">Task Tamer Revou © 2023</p>
+</footer>
+
+</html>

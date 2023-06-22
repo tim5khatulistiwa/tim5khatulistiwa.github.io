@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap');
+
+
+.header {
+    background-image: url(bg-color.jpg);
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+
+.tasktamer {
+    font-family: 'Geologica', sans-serif;
+    font-weight: bolder;
+    font-size: 50px;
+}
+
+.threenavbar {
+    margin-bottom: 70px;
+    width: 35%;
+}
+
+
+.hero-card {
+    width: 200px;
+    padding: 20px 20px;
+    margin: 20px calc(12vw - 100px);
+    box-shadow: 10px 10px 15px #567;
+    border-radius: 10px;
+    overflow: hidden;
+    text-align: center;
+    display: inline-block;
+}
+
+.hero-card img {
+    width: calc(100% + 40px);
+    height: 225px;
+    margin-left: -20px;
+    margin-top: -20px;
+    object-fit: cover;
+}   
+
+@font-face /*perintah untuk memanggil font eksternal*/
+  {
+    font-family: 'airbnb-font1'; /*memberikan nama bebas untuk font*/
+    src: url('AirbnbCereal1.otf');/*memanggil file font eksternalnya di folder nexa*/
+}
+
+@font-face /*perintah untuk memanggil font eksternal*/
+    {
+      font-family: 'airbnb-font2'; /*memberikan nama bebas untuk font*/
+      src: url('AirbnbCereal2.otf');/*memanggil file font eksternalnya di folder nexa*/
+}
+
+.paragraph {
+    text-align: center;
+    margin: 50px 10px;
+    padding: 10px 20px;
+}
+
+.we-are {
+    font-family: 'airbnb-font2';
+    font-size: 15px;
+}
+
+.try-us {
+    font-family: 'airbnb-font1';
+    font-weight: bolder;
+    font-size: large;
+}
+
+footer { 
+    background-color: #EEEEEE;
+    padding-top: 20px;
+    padding: 10px 10px;
+}
+
+.threefooter {
+    font-size: small;
+}
+
+.copyright {
+    font-size: small;
+}
+
+.social a {
+    color: black;
+}
+
+.list-black {
+    color: black;
+}
+
+@media (max-width: 1000px) {
+    .hero-card {
+        margin: 20px calc(25vw - 120px);
+    }    
+}
+
+@media (max-width: 500px) {
+    .hero-card {
+        margin: 30px auto;
+        display: block;
+    }
+}
